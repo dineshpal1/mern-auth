@@ -13,12 +13,12 @@ function App() {
     {/* header */}
     <Header/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
+      <Route path="/" exact element={<Home/>}/>
+      <Route path="/about" exact element={<About/>}/>
       
-      <Route path="/sign-up" element={<SignUp/>}/>
-      <Route path="/profile" element={<Profile />}/>
-      <Route path="/sign-in" element={<Signin />}/>
+      <Route path="/sign-up" exact element={<SignUp/>}/>
+      <Route path="/profile" exact element={<Profile />}/>
+      <Route path="/sign-in" exact element={<Signin />}/>
       
     </Routes>
     </BrowserRouter>
